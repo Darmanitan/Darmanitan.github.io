@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/stylesheets/main.css">
+    <title>ploob.me | about</title>
+</head>
+<body>
+    <nav>
+        <a href="/">home</a>
+        <a href="/contact.html">contact</a>
+        <a href="https://github.com/Darmanitan?tab=repositories">projects</a>
+        <a href="/about.html">about</a>
+    </nav>
+    <div class="content">
+    <h1>about me</h1>
+    <p>i'm a developer who codes in:</p>
+    <ul>
+        <li>python</li>
+        <li>html</li>
+        <li>css</li>
+    </ul>
+    <p>i'm interested in becoming a <strong>full-stack developer</strong></p>
+    <p>i'm currently working on my project, <a href="http://github.com/darmanitan/litterbox">litterbox</a>.</p>
+    </div>
+
+    <script>
+        document.onkeypress = function (e) {
+            e = e || window.event;
+
+            if(e.keyCode == 13) {
+                document.documentElement.classList.toggle('dark-mode');
+                document.querySelectorAll('.inverted').forEach((result) => {
+                    result.classList.toggle('invert');
+                })
+            }
+        }        
+    </script>
+</body>
+</html>
