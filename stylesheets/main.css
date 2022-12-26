@@ -1,20 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 
 :root {
-    color: white;
-    --text-color: white;
-    background-color: black;
+    color: #cdd6f4;
+    --text-color: #f5e0dc;
+    background-color: #1e1e2e;
     margin: 2rem;
   }
-  
   html,
   body {
     font-family: "Roboto Mono";
     height: 100%;
   }
   
-  a,
-  li {
+  a{
     position: relative;
     text-decoration: none;
     color: var(--text-color);
@@ -24,7 +22,7 @@
   a:after{
     content: "";
     position: absolute;
-    background-color: #ffc0cb;
+    background-color: #a6e3a1;
     height: 2px;
     width: 0;
     left: 0;
@@ -37,13 +35,11 @@
   
   .content {
     text-align: center;
-  
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 50%;
   }
-
   .inverted {
     display: block;
     margin-left: auto;
@@ -55,4 +51,14 @@
     display: flex;
     justify-content: center;
   }
+  .list {
+    text-align: center;
+  }
   
+  .list ul {
+    display: inline-block;
+  }
+  
+  .list ul li {
+    text-align: left;
+  }
